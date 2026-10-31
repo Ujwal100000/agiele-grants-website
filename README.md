@@ -1,6 +1,6 @@
-# AGIELE GRANTS Website
+# Agiele Funding Website
 
-Static site for AGIELE GRANTS: grant research, writing, and management across all 50 U.S. states.
+Static site for Agiele Funding: grant research, writing, and management across all 50 U.S. states.
 
 ## Deploy
 
