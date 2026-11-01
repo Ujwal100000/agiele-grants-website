@@ -48,6 +48,13 @@ details[open] .chev{transform:rotate(45deg)}
 .hero-band{background:linear-gradient(160deg,#234469 0%,#3F5A7A 55%,#1D5286 130%)}
 
 </style>
+<style>
+.usmap svg g.state path{fill:#E9E4D6;stroke:#FFFFFF;stroke-width:.8;cursor:pointer;transition:fill .2s ease}
+.usmap svg g.state path:hover{fill:#BF9F70}
+.usmap svg g.state path.sel{fill:#3F5A7A}
+.usmap svg g.state path.dim{fill:#F1EDE2}
+.usmap svg g.borders path{stroke:#FFFFFF;fill:none;pointer-events:none}
+</style>
 </head>
 <body class="bg-white text-slate-800 antialiased">
 <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:bg-forest-800 focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
@@ -93,7 +100,7 @@ details[open] .chev{transform:rotate(45deg)}
 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="4"/></svg>
 U.S. Grant Research, Writing &amp; Management
 </p>
-<h1 class="reveal d1 mt-5 font-serif text-4xl font-semibold leading-[1.12] text-white sm:text-5xl lg:text-[3.4rem]">Strategic Funding Evaluation and Support.<br />From Opportunities Identification to Outcome Impact Assessment.</h1>
+<h1 class="reveal d1 mt-5 font-serif text-4xl font-semibold leading-[1.12] text-white sm:text-5xl lg:text-[3.4rem]">Strategic Funding Evaluation and Support.<br />From Opportunity to Outcome Impact.</h1>
 <p class="reveal d2 mt-6 max-w-xl text-lg leading-relaxed text-ivory-100/85">We walk with you from opportunities identification through strategic funding evaluation to outcome impact assessment: compelling applications, approval navigation, and reporting handled to the final closeout.</p>
 <div class="reveal d3 mt-9 flex flex-col gap-3 sm:flex-row">
 <a href="https://calendly.com/clientsuccess-agiele/30min?" class="inline-flex items-center justify-center gap-2 rounded-lg bg-gold-500 px-7 py-3.5 font-semibold text-forest-950 shadow-lg transition hover:bg-gold-300">Book a Consultation
@@ -407,6 +414,17 @@ const mb=document.getElementById("menu-btn"),mm=document.getElementById("mobile-
 if(mb){mb.addEventListener("click",()=>{const open=mm.classList.toggle("hidden")===false;mb.setAttribute("aria-expanded",open)});}
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+</script>
+<script>
+const STATE_NAMES_I={al:"Alabama",ak:"Alaska",az:"Arizona",ar:"Arkansas",ca:"California",co:"Colorado",ct:"Connecticut",de:"Delaware",fl:"Florida",ga:"Georgia",hi:"Hawaii",id:"Idaho",il:"Illinois",in:"Indiana",ia:"Iowa",ks:"Kansas",ky:"Kentucky",la:"Louisiana",me:"Maine",md:"Maryland",ma:"Massachusetts",mi:"Michigan",mn:"Minnesota",ms:"Mississippi",mo:"Missouri",mt:"Montana",ne:"Nebraska",nv:"Nevada",nh:"New Hampshire",nj:"New Jersey",nm:"New Mexico",ny:"New York",nc:"North Carolina",nd:"North Dakota",oh:"Ohio",ok:"Oklahoma",or:"Oregon",pa:"Pennsylvania",ri:"Rhode Island",sc:"South Carolina",sd:"South Dakota",tn:"Tennessee",tx:"Texas",ut:"Utah",vt:"Vermont",va:"Virginia",wa:"Washington",wv:"West Virginia",wi:"Wisconsin",wy:"Wyoming",dc:"District of Columbia"};
+const tipI=document.getElementById("map-tip");
+document.querySelectorAll(".usmap svg g.state path").forEach(p=>{
+const code=(p.getAttribute("class")||"").split(" ")[0];
+if(!STATE_NAMES_I[code])return;
+p.addEventListener("mousemove",e=>{tipI.classList.remove("hidden");tipI.textContent=STATE_NAMES_I[code];const host=document.getElementById("usmap").getBoundingClientRect();tipI.style.left=(e.clientX-host.left+14)+"px";tipI.style.top=(e.clientY-host.top-30)+"px";});
+p.addEventListener("mouseleave",()=>tipI.classList.add("hidden"));
+p.addEventListener("click",()=>{location.href="states.html?state="+encodeURIComponent(STATE_NAMES_I[code]);});
+});
 </script>
 </body>
 </html>
