@@ -18,11 +18,11 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config={theme:{extend:{
-colors:{forest:{50:"#F1F6F2",100:"#DDEAE0",600:"#2E6B4F",700:"#1F5138",800:"#14402C",900:"#123B29",950:"#0B241A"},
-gold:{100:"#F4EBD3",300:"#E2CE97",500:"#C9A24B",600:"#B08A33",700:"#8F6E26"},
-ivory:{50:"#FBF9F4",100:"#F7F4EC",200:"#EFEBDF",300:"#E9E4D6"}},
+colors:{forest:{50:"#F1F5F9",100:"#E2E8F0",600:"#3F5A7A",700:"#234469",800:"#072E55",900:"#091E3B",950:"#030C22"},
+gold:{100:"#F9EACA",300:"#E9CD9D",500:"#BF9F70",600:"#A08051",700:"#806339"},
+ivory:{50:"#FCFBF9",100:"#F4F2EC",200:"#EFEBDF",300:"#E9E4D6"}},
 fontFamily:{serif:["Fraunces","serif"],sans:["Inter","sans-serif"]},
-boxShadow:{soft:"0 20px 50px -20px rgba(18,59,41,.25)"}}}}
+boxShadow:{soft:"0 20px 50px -20px rgba(9,30,59,.25)"}}}}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,17 +35,17 @@ body{font-family:Inter,sans-serif}
 .reveal.in{opacity:1;transform:none}
 .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
 .navlink{position:relative;padding-bottom:2px}
-.navlink:after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:#C9A24B;transition:width .25s ease}
+.navlink:after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:#BF9F70;transition:width .25s ease}
 .navlink:hover:after,.navlink.active:after{width:100%}
-.grain{background-image:radial-gradient(rgba(18,59,41,.055) 1px,transparent 1px);background-size:22px 22px}
-.goldrule{width:56px;height:3px;background:#C9A24B;border-radius:2px}
+.grain{background-image:radial-gradient(rgba(9,30,59,.055) 1px,transparent 1px);background-size:22px 22px}
+.goldrule{width:56px;height:3px;background:#BF9F70;border-radius:2px}
 .card-hover{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
-.card-hover:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(18,59,41,.28);border-color:#C9A24B}
+.card-hover:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(9,30,59,.28);border-color:#BF9F70}
 details>summary{list-style:none;cursor:pointer}
 details>summary::-webkit-details-marker{display:none}
 details[open] .chev{transform:rotate(45deg)}
 .chev{transition:transform .25s ease}
-.hero-band{background:linear-gradient(160deg,#1F5138 0%,#2E6B4F 55%,#3E8263 130%)}
+.hero-band{background:linear-gradient(160deg,#234469 0%,#3F5A7A 55%,#1D5286 130%)}
 
 </style>
 </head>
@@ -54,7 +54,7 @@ details[open] .chev{transform:rotate(45deg)}
 <header class="sticky top-0 z-40 border-b border-ivory-300/70 bg-ivory-50/95 backdrop-blur">
 <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
 <a href="index.html" aria-label="Agiele Funding home" class="flex items-center gap-2.5">
-<svg width="40" height="40" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#123B29"/><path d="M13 31c0-8 5-14 11-14s11 6 11 14" stroke="#C9A24B" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M16.5 33 24 15.5 31.5 33" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M19.5 27.5h9" stroke="#C9A24B" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="37.4" r="1.7" fill="#C9A24B"/></svg>
+<svg width="40" height="40" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#091E3B"/><path d="M13 31c0-8 5-14 11-14s11 6 11 14" stroke="#BF9F70" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M16.5 33 24 15.5 31.5 33" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M19.5 27.5h9" stroke="#BF9F70" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="37.4" r="1.7" fill="#BF9F70"/></svg>
 <span class="leading-tight"><span class="block font-serif text-[19px] font-semibold tracking-wide text-forest-900">Agiele <span class="text-gold-600">Funding</span></span><span class="block text-[9.5px] uppercase tracking-[0.2em] text-forest-800/60">Grant Research, Writing &amp; Management</span></span>
 </a>
 <nav class="hidden items-center gap-4 xl:flex" aria-label="Primary">
@@ -102,10 +102,10 @@ details[open] .chev{transform:rotate(45deg)}
 <div class="flex flex-wrap items-center gap-3"><h2 class="font-serif text-2xl font-semibold text-forest-900">Grant Research and Opportunity Identification</h2><span class="rounded-full bg-forest-100 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-forest-700">Foundation of every win</span></div>
 <p class="mt-3 leading-relaxed text-slate-600">We continuously scan federal, state, foundation, and corporate funding landscapes to surface opportunities that genuinely fit your organization, not just opportunities that exist.</p>
 <ul class="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Federal, state, foundation, and corporate sources</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Deadline and cycle tracking</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fit scoring against your mission and capacity</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Ongoing opportunity pipeline</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Federal, state, foundation, and corporate sources</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Deadline and cycle tracking</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fit scoring against your mission and capacity</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Ongoing opportunity pipeline</li>
 </ul>
 </div>
 </article>
@@ -116,10 +116,10 @@ details[open] .chev{transform:rotate(45deg)}
 <h2 class="font-serif text-2xl font-semibold text-forest-900">Grant Strategy and Eligibility Assessment</h2>
 <p class="mt-3 leading-relaxed text-slate-600">Before any application, we map a realistic strategy: which programs match your structure and location, what each funder expects, and where your probability of success is strongest.</p>
 <ul class="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Eligibility screening for every opportunity</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Funding roadmap and calendar</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Go or no-go recommendations</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Positioning against funder priorities</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Eligibility screening for every opportunity</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Funding roadmap and calendar</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Go or no-go recommendations</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Positioning against funder priorities</li>
 </ul>
 </div>
 </article>
@@ -130,10 +130,10 @@ details[open] .chev{transform:rotate(45deg)}
 <h2 class="font-serif text-2xl font-semibold text-forest-900">Professional Grant Writing and Application Preparation</h2>
 <p class="mt-3 leading-relaxed text-slate-600">Compelling, funder-aligned narratives, budgets, logic models, and attachments, developed to the exact requirements of each application and polished for reviewers.</p>
 <ul class="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Narratives and needs statements</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Budgets and justifications</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Logic models and evaluation plans</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Supporting documents and appendices</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Narratives and needs statements</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Budgets and justifications</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Logic models and evaluation plans</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Supporting documents and appendices</li>
 </ul>
 </div>
 </article>
@@ -144,10 +144,10 @@ details[open] .chev{transform:rotate(45deg)}
 <h2 class="font-serif text-2xl font-semibold text-forest-900">Grant Application Management and Submission</h2>
 <p class="mt-3 leading-relaxed text-slate-600">Portal registrations, system-for-award requirements, internal sign-offs, and deadline logistics, all coordinated so your application lands complete and on time.</p>
 <ul class="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Portal setup and registration guidance</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Checklist and document assembly</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Internal review coordination</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Deadline and submission tracking</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Portal setup and registration guidance</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Checklist and document assembly</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Internal review coordination</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Deadline and submission tracking</li>
 </ul>
 </div>
 </article>
@@ -158,10 +158,10 @@ details[open] .chev{transform:rotate(45deg)}
 <h2 class="font-serif text-2xl font-semibold text-forest-900">Grant Approval and Award Management</h2>
 <p class="mt-3 leading-relaxed text-slate-600">Most consultancies disappear after submission. We stay with you through reviewer questions, award negotiation, agreements, and first-dollar requirements.</p>
 <ul class="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B08A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Reviewer question response support</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B08A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Award terms and agreement review support</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B08A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Onboarding to award requirements</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B08A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Set-up of tracking and documentation</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A08051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Reviewer question response support</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A08051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Award terms and agreement review support</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A08051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Onboarding to award requirements</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A08051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Set-up of tracking and documentation</li>
 </ul>
 </div>
 </article>
@@ -172,10 +172,10 @@ details[open] .chev{transform:rotate(45deg)}
 <h2 class="font-serif text-2xl font-semibold text-forest-900">Grant Administration and Compliance Support</h2>
 <p class="mt-3 leading-relaxed text-slate-600">Ongoing administration that keeps your award in good standing: documentation, funder communications, spending alignment, and condition tracking.</p>
 <ul class="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Grant file and records organization</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Funder correspondence support</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Condition and milestone tracking</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Amendment and modification support</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Grant file and records organization</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Funder correspondence support</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Condition and milestone tracking</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Amendment and modification support</li>
 </ul>
 </div>
 </article>
@@ -186,10 +186,10 @@ details[open] .chev{transform:rotate(45deg)}
 <h2 class="font-serif text-2xl font-semibold text-forest-900">Progress Reporting, Final Reporting, and Grant Closeout</h2>
 <p class="mt-3 leading-relaxed text-slate-600">Reporting is where future funding is won or lost. We help you tell a clear impact story, meet every deadline, and close out grants cleanly.</p>
 <ul class="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Progress and interim report drafting</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Final reports and impact narratives</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Closeout documentation support</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Lessons learned for the next cycle</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Progress and interim report drafting</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Final reports and impact narratives</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Closeout documentation support</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#BF9F70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Lessons learned for the next cycle</li>
 </ul>
 </div>
 </article>
@@ -200,10 +200,10 @@ details[open] .chev{transform:rotate(45deg)}
 <h2 class="font-serif text-2xl font-semibold text-forest-900">Specialized Healthcare, Startup, Fellowship, and Innovation Funding</h2>
 <p class="mt-3 leading-relaxed text-slate-600">A dedicated practice area for healthcare organizations, early-stage companies, and innovators pursuing fellowships, SBIR-style programs, and innovation-focused funders.</p>
 <ul class="mt-4 grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B08A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Healthcare and medical technology programs</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B08A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Startup and accelerator funding</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B08A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fellowship applications</li>
-<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B08A33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Innovation and research-focused programs</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A08051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Healthcare and medical technology programs</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A08051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Startup and accelerator funding</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A08051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Fellowship applications</li>
+<li class="flex gap-2"><svg class="mt-0.5 shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A08051" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Innovation and research-focused programs</li>
 </ul>
 </div>
 </article>
@@ -224,7 +224,7 @@ details[open] .chev{transform:rotate(45deg)}
 <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
 <div>
 <span class="flex items-center gap-2.5">
-<svg width="40" height="40" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#F7F4EC"/><path d="M13 31c0-8 5-14 11-14s11 6 11 14" stroke="#C9A24B" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M16.5 33 24 15.5 31.5 33" stroke="#123B29" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M19.5 27.5h9" stroke="#C9A24B" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="37.4" r="1.7" fill="#C9A24B"/></svg>
+<svg width="40" height="40" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="11" fill="#F4F2EC"/><path d="M13 31c0-8 5-14 11-14s11 6 11 14" stroke="#BF9F70" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M16.5 33 24 15.5 31.5 33" stroke="#091E3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M19.5 27.5h9" stroke="#BF9F70" stroke-width="2.2" stroke-linecap="round"/><circle cx="24" cy="37.4" r="1.7" fill="#BF9F70"/></svg>
 <span class="leading-tight"><span class="block font-serif text-[19px] font-semibold tracking-wide text-white">Agiele <span class="text-gold-300">Funding</span></span><span class="block text-[9.5px] uppercase tracking-[0.2em] text-ivory-200/60">Grant Research, Writing &amp; Management</span></span>
 </span>
 <p class="mt-4 max-w-xs text-sm leading-relaxed text-ivory-200/70">Your Vision. Our Strategy. Funding Your Impact. Strategic grant support across the United States, from opportunity identification to final reporting.</p>
